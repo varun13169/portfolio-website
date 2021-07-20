@@ -31,8 +31,10 @@ hr {
 
 /** Link **/
 .link {
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
 }
 
 /** For padding: top right botton left **/
@@ -104,6 +106,10 @@ hr {
     padding: 2rem;
     color: var(--dark-grey);
     text-align: center;
+}
+
+.hero .hero-heading-inverted {
+    color: var(--primary-color);
 }
 
 
