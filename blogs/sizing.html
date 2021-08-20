@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container container-center">
+        <h1>What is px vs rem vs em...</h1>
+
+        <div>
+            Devs starting with web development always get confused when to use px rem or em.<br>
+            Let me simplify before diving deep into the topic, px, rem, and em are just units of messurement in pixels.<br><br>
+            
+            If just it's just pixels then why other fancy unit viz rem and em, and not just px.<br><br>
+            
+            It is because world is messed up and we have different screens with different pixel density. Therefore if I define a gap of 10 px between letters, then screen A with pixel density of 10px/inch will show an inch gap between characters vs screen B with pixel density of 20px/inch will show a gap of half inch between characters.<br><br>
+
+            We have a problem here, our gap between elements(characters) dont change with the screen resolution. To solve the problem we use a releative unit of messurement which is not dependent on the pixel density of the screen but is dependent on the size of font we use.<br><br>
+
+            <h2>Introducing REM</h2>
+            <p>
+                <br>
+                REM stands for root element and is a unit that is multiple of font size.
+                Therefore, 1rem = 1(font unit of the font of root element)<br><br>
+
+                Example:<br>
+                Font size of root element is 14px.<br>
+                Then, 1rem = 14px<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2rem = 28px<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3rem = 42px<br>
+            </p>
+
+            <p>
+                In the above example, if you observe I use "root element" font size. So, the sizing will be dependent on the root element's font size.
+                To make sizing dependent on the size of the element's size we use <strong>EM</strong>.
+            </p>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
