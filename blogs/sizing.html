@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sizing Blog</title>
     <link href="/style.css" rel="stylesheet" />
 </head>
 <body>
+    <nav class="navigation">
+        <div class="nav-brand">Varun Kumar</div>
 
-    <div class="container container-center">
-        <h1>What is px vs rem vs em...</h1>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
 
+
+    <header class="hero">
+        <h1 class="hero-heading">What is <spam class="hero-heading-inverted">px</spam> vs <spam class="hero-heading-inverted">rem</spam> vs <spam class="hero-heading-inverted">em</spam>...</h1>
+    </header>
+    
+
+    <div class="container container-center blog">
         <div>
             Devs starting with web development always get confused when to use px rem or em.<br>
             Let me simplify before diving deep into the topic, px, rem, and em are just units of messurement in pixels.<br><br>
@@ -39,10 +58,24 @@
                 In the above example, if you observe I use "root element" font size. So, the sizing will be dependent on the root element's font size.
                 To make sizing dependent on the size of the element's size we use <strong>EM</strong>.
             </p>
-
-
         </div>
     </div>
+
+
+    <footer class="footer container">
+        <h3 class="footer-header">You can reach out to me on</h3>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">GitHub</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">LinkedIn</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Twitter</a>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 </html>
